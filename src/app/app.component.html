@@ -53,13 +53,17 @@
         <td>
           <span [ngStyle]="{color: lancamento.tipo === 'DESPESA' ? 'red' : 'blue'}">{{lancamento.valor}}</span>
         </td>
-        <td class="col-acoes" >
-          <a pButton icon="fa-pencil" tooltipPosition="top" style="margin:5px">
+        <td class="col-acoes">
+          <a pButton icon="fa-pencil"
+             style="margin:5px"
+             pTooltip="Editar"
+             tooltipPosition="top">
             <i class="pi pi-pencil"></i>
           </a>
           <button pButton icon="fa-trash"
                   style="margin:5px"
-                  pTooltip="Excluir">
+                  pTooltip="Excluir"
+                  tooltipPosition="top">
             <i class="pi pi-trash"></i>
           </button>
         </td>
