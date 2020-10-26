@@ -9,11 +9,13 @@ import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
 import {TabViewModule} from 'primeng/tabview';
 import {TooltipModule} from 'primeng/tooltip';
+import { LaunchSearchComponent } from './launch-search/launch-search.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LaunchSearchComponent
   ],
     imports: [
         BrowserModule,
