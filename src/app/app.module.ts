@@ -10,12 +10,14 @@ import {TableModule} from 'primeng/table';
 import {TabViewModule} from 'primeng/tabview';
 import {TooltipModule} from 'primeng/tooltip';
 import { LaunchSearchComponent } from './launch-search/launch-search.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LaunchSearchComponent
+    LaunchSearchComponent,
+    NavbarComponent
   ],
     imports: [
         BrowserModule,
