@@ -24,5 +24,13 @@ export class LaunchSearchComponent {
       tipo: 'DESPESA', descricao: 'Mensalidade musculação', dataVencimento: '13/06/2017',
       dataPagamento: null, valor: 100, pessoa: 'Academia Top'
     },
+    {
+      tipo: 'DESPESA', descricao: 'Mensalidade musculação', dataVencimento: '20/06/2019',
+      dataPagamento: null, valor: 90, pessoa: 'Academia Ritmos'
+    },
+    {
+      tipo: 'RECEITA', descricao: 'Venda de Tablet', dataVencimento: '13/06/2020',
+      dataPagamento: null, valor: 700, pessoa: 'Amigo de Gabriel'
+    }
   ];
 }

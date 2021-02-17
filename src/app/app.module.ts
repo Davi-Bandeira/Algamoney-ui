@@ -11,13 +11,15 @@ import {TabViewModule} from 'primeng/tabview';
 import {TooltipModule} from 'primeng/tooltip';
 import { LaunchSearchComponent } from './launch-search/launch-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PessoaComponent } from './pessoa/pessoa.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LaunchSearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    PessoaComponent
   ],
     imports: [
         BrowserModule,
