@@ -12,6 +12,7 @@ import {TooltipModule} from 'primeng/tooltip';
 import { LaunchSearchComponent } from './launch-search/launch-search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoaComponent } from './pessoa/pessoa.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PessoaComponent } from './pessoa/pessoa.component';
     AppComponent,
     LaunchSearchComponent,
     NavbarComponent,
-    PessoaComponent
+    PessoaComponent,
+    PipeComponent
   ],
     imports: [
         BrowserModule,
