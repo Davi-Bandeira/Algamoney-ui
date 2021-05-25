@@ -9,10 +9,10 @@ import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
 import {TabViewModule} from 'primeng/tabview';
 import {TooltipModule} from 'primeng/tooltip';
-import { LaunchSearchComponent } from './launch-search/launch-search.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PessoaComponent } from './pessoa/pessoa.component';
-import { PipeComponent } from './pipe/pipe.component';
+import {LaunchSearchComponent} from './launch-search/launch-search.component';
+import {NavbarComponent} from './navbar/navbar.component';
+import {PessoaComponent} from './pessoa/pessoa.component';
+import {PipeComponent} from './pipe/pipe.component';
 
 
 @NgModule({
@@ -23,16 +23,16 @@ import { PipeComponent } from './pipe/pipe.component';
     PessoaComponent,
     PipeComponent
   ],
-    imports: [
-        BrowserModule,
-        RouterModule,
-        FormsModule,
-        InputTextModule,
-        ButtonModule,
-        TableModule,
-        TabViewModule,
-        TooltipModule
-    ],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    FormsModule,
+    InputTextModule,
+    ButtonModule,
+    TableModule,
+    TabViewModule,
+    TooltipModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
