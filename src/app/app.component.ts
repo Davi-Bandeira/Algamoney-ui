@@ -11,6 +11,7 @@ export class AppComponent {
   // tslint:disable-next-line:typedef
   salvar(form: NgForm) {
     console.log(form);
+    console.log(form.value.nome);
   }
 }
 
