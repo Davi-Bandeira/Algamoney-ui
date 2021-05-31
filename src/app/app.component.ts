@@ -8,6 +8,8 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent {
 
+  profissoes = ['Desenvolvedor', 'Empresário', 'Outra'];
+
   // tslint:disable-next-line:typedef
   salvar(form: NgForm) {
     console.log(form);
