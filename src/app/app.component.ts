@@ -26,8 +26,9 @@ export class AppComponent {
 
     // console.log(this.profissao);
     // console.log(form.value.profissao);
-    console.log(form.value);
-    console.log(this.client);
+    // console.log(form.value);
+    // console.log(this.client);
+    console.log(form);
   }
 }
 
