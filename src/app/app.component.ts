@@ -9,11 +9,12 @@ import {NgForm} from '@angular/forms';
 export class AppComponent {
 
   profissoes = ['Desenvolvedor', 'Empresário', 'Outra'];
+  profissao = 'Outra';
 
   // tslint:disable-next-line:typedef
   salvar(form: NgForm) {
-    console.log(form);
-    console.log(form.value.nome);
+    console.log(this.profissao);
+    console.log(form.value.profissao);
   }
 }
 
