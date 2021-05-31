@@ -5,7 +5,7 @@
 
 <div class="container">
 
-  <form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
+  <form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)" autocomplete="off">
     <div class="form-group">
       <label class="form-control-label">Nome</label>
       <input type="text" class="form-control" name="nome" [(ngModel)]="client.name" required minlength="4">
@@ -26,9 +26,16 @@
     </div>
 
     <button type="submit" class="btn btn-primary" [disabled]="!usuarioForm.valid">Salvar</button>
+
+    <div class="alert alert-danger" *ngIf="usuarioForm.invalid">
+      Preencha todos os campos corretamente!
+    </div>
   </form>
 
+  <br><br>
+
   {{ client | json }}
-  {{ usuarioForm.valid }}
+  <br>
+  {{ "Valido: " + usuarioForm.valid }}
 
 </div>
