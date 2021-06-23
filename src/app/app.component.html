@@ -5,7 +5,7 @@
 
 <div class="container">
 
-  <div class="alert alert-danger" *ngIf="usuarioForm.invalid && usuarioForm.touched && usuarioForm.dirty">
+  <div class="alert alert-danger" *ngIf="usuarioForm.invalid && name.touched && email.dirty && profissao.touched">
     Preencha todos os campos corretamente!
   </div>
 
