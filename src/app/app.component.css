@@ -1,12 +1,16 @@
 .container {
   position: absolute;
-  margin: 50px;
-}
-
-.form-group {
-  margin-top: 25px;
+  margin: 50px 50px 50px 100px;
 }
 
 input.ng-invalid.ng-touched.ng-dirty , select.ng-invalid.ng-touched.ng-dirty {
   border: 1px solid red;
+}
+
+.form-group {
+  width: 500px;
+}
+
+.form-control-feedback {
+  color: red;
 }
