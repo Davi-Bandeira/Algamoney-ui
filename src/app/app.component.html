@@ -14,15 +14,15 @@
       <label class="form-control-label">Nome</label>
       <input type="text" class="form-control" name="nome" [(ngModel)]="client.name" required minlength="4" #name="ngModel">
 
-      <div *ngIf="name.hasError('required')">Informe um nome!</div>
-      <div *ngIf="name.hasError('minlength')">O nome deve ser completo!</div>
+      <div *ngIf="name.hasError('required') && name.touched && name.dirty">Informe um nome!</div>
+      <div *ngIf="name.hasError('minlength') && name.touched && name.dirty">O nome deve ser completo!</div><br>
     </div>
 
     <div class="form-group">
       <label class="form-control-label">E-mail</label>
       <input type="text" class="form-control" name="email" [(ngModel)]="client.email" email #email="ngModel">
 
-      <div *ngIf="email.invalid">Informe um e-mail válido!</div>
+      <div *ngIf="email.invalid && email.touched && email.dirty">Informe um e-mail válido!</div>
     </div>
 
     <div class="form-group">
@@ -33,7 +33,7 @@
                 [value]="profissao">{{profissao}}</option>
       </select>
 
-      <div *ngIf="profissao.invalid">Informe uma profissão !</div>
+      <div *ngIf="profissao.invalid && profissao.touched && profissao.dirty">Informe uma profissão !</div><br>
     </div>
 
     <button type="submit" class="btn btn-primary" [disabled]="!usuarioForm.valid">Salvar</button>
