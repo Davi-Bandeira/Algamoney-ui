@@ -6,3 +6,7 @@
 .form-group {
   margin-top: 25px;
 }
+
+input.ng-invalid.ng-touched.ng-dirty , select.ng-invalid.ng-touched.ng-dirty {
+  border: 1px solid red;
+}
