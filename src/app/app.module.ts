@@ -13,6 +13,8 @@ import {LaunchSearchComponent} from './launch-search/launch-search.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {PessoaComponent} from './pessoa/pessoa.component';
 import {PipeComponent} from './pipe/pipe.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
+import { FormulariosValidacaoComponent } from './formularios-validacao/formularios-validacao.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import {PipeComponent} from './pipe/pipe.component';
     LaunchSearchComponent,
     NavbarComponent,
     PessoaComponent,
-    PipeComponent
+    PipeComponent,
+    LancamentoCadastroComponent,
+    FormulariosValidacaoComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,7 @@ import {PipeComponent} from './pipe/pipe.component';
     TooltipModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, FormulariosValidacaoComponent]
 })
 export class AppModule {
 }
