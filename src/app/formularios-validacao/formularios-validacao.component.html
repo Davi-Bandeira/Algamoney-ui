@@ -1,0 +1,58 @@
+<div class="container">
+
+  <div class="alert alert-danger" *ngIf="usuarioForm.invalid && name.touched && email.dirty && profissao.touched">
+    Preencha todos os campos corretamente!
+  </div>
+
+  <form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)" autocomplete="off">
+    <div class="form-group"
+         [class.has-danger]="name.invalid && name.touched && name.dirty">
+      <label class="form-control-label">Nome</label>
+      <input type="text" class="form-control" name="nome" [(ngModel)]="client.name" required minlength="4"
+             #name="ngModel">
+
+      <div *ngIf="name.hasError('required') && name.touched && name.dirty"
+           class="form-control-feedback">Informe um nome!
+      </div>
+      <div *ngIf="name.hasError('minlength') && name.touched && name.dirty"
+           class="form-control-feedback">O nome deve ser completo!
+      </div>
+      <br>
+    </div>
+
+    <div class="form-group"
+         [class.has-danger]="email.invalid && email.touched && email.dirty">
+      <label class="form-control-label">E-mail</label>
+      <input type="text" class="form-control" name="email" [(ngModel)]="client.email" email #email="ngModel">
+
+      <div *ngIf="email.invalid && email.touched && email.dirty"
+           class="form-control-feedback">Informe um e-mail válido!
+      </div>
+      <br>
+    </div>
+
+    <div class="form-group"
+         [class.has-danger]="profissao.invalid && profissao.touched && profissao.dirty">
+      <label class="form-control-label">Profissão</label>
+      <select class="form-control" name="profissao" [(ngModel)]="client.profissao" required #profissao="ngModel">
+        <option value="">Selecione</option>
+        <option *ngFor="let profissao of profissoes"
+                [value]="profissao">{{profissao}}</option>
+      </select>
+
+      <div *ngIf="profissao.invalid && profissao.touched && profissao.dirty"
+           class="form-control-feedback">Informe uma profissão !
+      </div>
+      <br>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!usuarioForm.valid">Salvar</button>
+  </form>
+
+  <br><br>
+
+  {{ client | json }}
+  <br>
+  {{ "Valido: " + usuarioForm.valid }}
+
+</div>
