@@ -5,3 +5,17 @@ div {
 .container {
   margin-left: 40px;
 }
+
+.col-valor {
+  width: 120px;
+  text-align: right;
+}
+
+.col-data {
+  width: 120px;
+  text-align: center;
+}
+
+.col-acoes {
+  width: 150px;
+}

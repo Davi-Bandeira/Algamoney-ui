@@ -15,6 +15,7 @@ import {PessoaComponent} from './pessoa/pessoa.component';
 import {PipeComponent} from './pipe/pipe.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { FormulariosValidacaoComponent } from './formularios-validacao/formularios-validacao.component';
+import { InputTextareaModule} from 'primeng/inputtextarea';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FormulariosValidacaoComponent } from './formularios-validacao/formulari
     ButtonModule,
     TableModule,
     TabViewModule,
-    TooltipModule
+    TooltipModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent, FormulariosValidacaoComponent]
